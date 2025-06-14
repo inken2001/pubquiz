@@ -59,3 +59,21 @@ button:hover {
 .hidden {
   display: none;
 }
+
+/* iPad 11 Hochformat */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) {
+  
+  #quiz-container {
+    max-width: 700px;      /* etwas breiter für iPad */
+    margin: 2rem auto;     /* zentriert mit Abstand */
+    font-size: 1.1rem;     /* Schrift etwas größer */
+  }
+  
+  button {
+    padding: 1rem 2rem;    /* größere Buttons für Touch */
+    font-size: 1.1rem;
+  }
+}
